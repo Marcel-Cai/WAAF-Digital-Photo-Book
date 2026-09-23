@@ -13,124 +13,202 @@
 
 <header class="topbar">
   <a class="brand" href="#home">WAAF <span>2026</span></a>
-  <nav class="stamps" aria-label="Chapters">
-    <a href="#sg" data-accent="sg"><span>SG</span></a>
-    <a href="#jb" data-accent="jb"><span>JB</span></a>
-    <a href="#jakarta" data-accent="jakarta"><span>JKT</span></a>
-    <a href="#hcmc" data-accent="hcmc"><span>HCMC</span></a>
-    <a href="#thanks" data-accent="thanks"><span>♡</span></a>
-  </nav>
 </header>
 
-<main>
+<main id="stage">
 
   <!-- HOME -->
-  <section id="home" class="chapter chapter--home">
-    <div class="chapter-inner">
+  <section id="home" class="view view--home is-active in">
+    <div class="view-inner">
       <p class="eyebrow">A thank-you, four stamps deep</p>
       <h1>Westpac Australia&ndash;Asia<br>Fellowship, 2026</h1>
-      <p class="lede">Two residentials, four cities, one very full passport. This is our
-      small way of saying thank you for everything you built for us — every session,
-      every late dinner, every "one more question" answered with patience. Scroll on,
-      it's all in here.</p>
+      <p class="lede">Two residentials, four cities, one very full passport. Pick a
+      stamp to relive it.</p>
 
-      <div class="passport-index">
-        <a href="#sg" class="stamp-card" data-accent="sg">
-          <span class="stamp-code">SG</span>
-          <span class="stamp-name">Singapore</span>
-        </a>
-        <a href="#jb" class="stamp-card" data-accent="jb">
-          <span class="stamp-code">JB</span>
-          <span class="stamp-name">Johor Bahru</span>
-        </a>
-        <a href="#jakarta" class="stamp-card" data-accent="jakarta">
-          <span class="stamp-code">JKT</span>
-          <span class="stamp-name">Jakarta</span>
-        </a>
-        <a href="#hcmc" class="stamp-card" data-accent="hcmc">
-          <span class="stamp-code">HCMC</span>
-          <span class="stamp-name">Ho Chi Minh City</span>
-        </a>
+      <div class="album-grid">
+        <button class="album-card" data-album="sg" data-accent="sg">
+          <span class="stack" aria-hidden="true"><i></i><i></i><i></i></span>
+          <span class="album-code">SG</span>
+          <span class="album-name">Singapore</span>
+        </button>
+        <button class="album-card" data-album="jb" data-accent="jb">
+          <span class="stack" aria-hidden="true"><i></i><i></i><i></i></span>
+          <span class="album-code">JB</span>
+          <span class="album-name">Johor Bahru</span>
+        </button>
+        <button class="album-card" data-album="jakarta" data-accent="jakarta">
+          <span class="stack" aria-hidden="true"><i></i><i></i><i></i></span>
+          <span class="album-code">JKT</span>
+          <span class="album-name">Jakarta</span>
+        </button>
+        <button class="album-card" data-album="hcmc" data-accent="hcmc">
+          <span class="stack" aria-hidden="true"><i></i><i></i><i></i></span>
+          <span class="album-code">HCMC</span>
+          <span class="album-name">Ho Chi Minh City</span>
+        </button>
       </div>
 
-      <a class="scroll-cue" href="#sg">Start the trip<span aria-hidden="true">↓</span></a>
+      <button class="text-link" data-album="thanks">Read our thank-you &rarr;</button>
     </div>
   </section>
 
   <!-- SINGAPORE -->
-  <section id="sg" class="chapter" data-accent="sg">
-    <div class="chapter-inner">
-      <p class="chapter-stamp" data-accent="sg">SG · Residential One</p>
+  <section id="sg" class="view view--album" data-accent="sg">
+    <div class="album-wrap">
+      <div class="album-header">
+        <button class="back-btn" data-back>&larr; Passport</button>
+        <p class="album-title-chip">SG &middot; Residential One</p>
+      </div>
       <h2>Singapore</h2>
-      <p class="chapter-copy">Where it all kicked off — orientation, first introductions,
+      <p class="album-copy">Where it all kicked off — orientation, first introductions,
       and the fastest a room full of strangers has ever turned into a group chat.</p>
 
-      <div class="photo-grid">
-        <figure class="polaroid r1"><img src="images/sg/sg-01.jpg" alt="" onerror="this.remove()"><figcaption>images/sg/sg-01.jpg</figcaption></figure>
-        <figure class="polaroid r2"><img src="images/sg/sg-02.jpg" alt="" onerror="this.remove()"><figcaption>images/sg/sg-02.jpg</figcaption></figure>
-        <figure class="polaroid r3"><img src="images/sg/sg-03.jpg" alt="" onerror="this.remove()"><figcaption>images/sg/sg-03.jpg</figcaption></figure>
-        <figure class="polaroid r4"><img src="images/sg/sg-04.jpg" alt="" onerror="this.remove()"><figcaption>images/sg/sg-04.jpg</figcaption></figure>
+      <div class="album-stage">
+        <button class="nav-arrow prev" data-prev aria-label="Previous photo">&lsaquo;</button>
+        <div class="photo-frame">
+          <figure class="photo-slide is-active">
+            <img src="images/sg/sg-01.jpg" alt="" onerror="this.remove()">
+            <figcaption class="annotation">Add a caption for sg-01.jpg</figcaption>
+          </figure>
+          <figure class="photo-slide">
+            <img src="images/sg/sg-02.jpg" alt="" onerror="this.remove()">
+            <figcaption class="annotation">Add a caption for sg-02.jpg</figcaption>
+          </figure>
+          <figure class="photo-slide">
+            <img src="images/sg/sg-03.jpg" alt="" onerror="this.remove()">
+            <figcaption class="annotation">Add a caption for sg-03.jpg</figcaption>
+          </figure>
+          <figure class="photo-slide">
+            <img src="images/sg/sg-04.jpg" alt="" onerror="this.remove()">
+            <figcaption class="annotation">Add a caption for sg-04.jpg</figcaption>
+          </figure>
+        </div>
+        <button class="nav-arrow next" data-next aria-label="Next photo">&rsaquo;</button>
       </div>
+      <div class="dots"></div>
     </div>
   </section>
 
   <!-- JOHOR BAHRU -->
-  <section id="jb" class="chapter" data-accent="jb">
-    <div class="chapter-inner">
-      <p class="chapter-stamp" data-accent="jb">JB · Day Trip</p>
+  <section id="jb" class="view view--album" data-accent="jb">
+    <div class="album-wrap">
+      <div class="album-header">
+        <button class="back-btn" data-back>&larr; Passport</button>
+        <p class="album-title-chip">JB &middot; Day Trip</p>
+      </div>
       <h2>Johor Bahru</h2>
-      <p class="chapter-copy">A border crossing, a change of pace, and proof that the best
+      <p class="album-copy">A border crossing, a change of pace, and proof that the best
       conversations happen when you're technically supposed to be on a bus.</p>
 
-      <div class="photo-grid">
-        <figure class="polaroid r2"><img src="images/jb/jb-01.jpg" alt="" onerror="this.remove()"><figcaption>images/jb/jb-01.jpg</figcaption></figure>
-        <figure class="polaroid r1"><img src="images/jb/jb-02.jpg" alt="" onerror="this.remove()"><figcaption>images/jb/jb-02.jpg</figcaption></figure>
-        <figure class="polaroid r4"><img src="images/jb/jb-03.jpg" alt="" onerror="this.remove()"><figcaption>images/jb/jb-03.jpg</figcaption></figure>
-        <figure class="polaroid r3"><img src="images/jb/jb-04.jpg" alt="" onerror="this.remove()"><figcaption>images/jb/jb-04.jpg</figcaption></figure>
+      <div class="album-stage">
+        <button class="nav-arrow prev" data-prev aria-label="Previous photo">&lsaquo;</button>
+        <div class="photo-frame">
+          <figure class="photo-slide is-active">
+            <img src="images/jb/jb-01.jpg" alt="" onerror="this.remove()">
+            <figcaption class="annotation">Add a caption for jb-01.jpg</figcaption>
+          </figure>
+          <figure class="photo-slide">
+            <img src="images/jb/jb-02.jpg" alt="" onerror="this.remove()">
+            <figcaption class="annotation">Add a caption for jb-02.jpg</figcaption>
+          </figure>
+          <figure class="photo-slide">
+            <img src="images/jb/jb-03.jpg" alt="" onerror="this.remove()">
+            <figcaption class="annotation">Add a caption for jb-03.jpg</figcaption>
+          </figure>
+          <figure class="photo-slide">
+            <img src="images/jb/jb-04.jpg" alt="" onerror="this.remove()">
+            <figcaption class="annotation">Add a caption for jb-04.jpg</figcaption>
+          </figure>
+        </div>
+        <button class="nav-arrow next" data-next aria-label="Next photo">&rsaquo;</button>
       </div>
+      <div class="dots"></div>
     </div>
   </section>
 
   <!-- JAKARTA -->
-  <section id="jakarta" class="chapter" data-accent="jakarta">
-    <div class="chapter-inner">
-      <p class="chapter-stamp" data-accent="jakarta">JKT · Residential Two</p>
+  <section id="jakarta" class="view view--album" data-accent="jakarta">
+    <div class="album-wrap">
+      <div class="album-header">
+        <button class="back-btn" data-back>&larr; Passport</button>
+        <p class="album-title-chip">JKT &middot; Residential Two</p>
+      </div>
       <h2>Jakarta</h2>
-      <p class="chapter-copy">Back together for round two — bigger questions, bolder
+      <p class="album-copy">Back together for round two — bigger questions, bolder
       ideas, and a city that never quite let the energy drop.</p>
 
-      <div class="photo-grid">
-        <figure class="polaroid r3"><img src="images/jakarta/jkt-01.jpg" alt="" onerror="this.remove()"><figcaption>images/jakarta/jkt-01.jpg</figcaption></figure>
-        <figure class="polaroid r4"><img src="images/jakarta/jkt-02.jpg" alt="" onerror="this.remove()"><figcaption>images/jakarta/jkt-02.jpg</figcaption></figure>
-        <figure class="polaroid r1"><img src="images/jakarta/jkt-03.jpg" alt="" onerror="this.remove()"><figcaption>images/jakarta/jkt-03.jpg</figcaption></figure>
-        <figure class="polaroid r2"><img src="images/jakarta/jkt-04.jpg" alt="" onerror="this.remove()"><figcaption>images/jakarta/jkt-04.jpg</figcaption></figure>
+      <div class="album-stage">
+        <button class="nav-arrow prev" data-prev aria-label="Previous photo">&lsaquo;</button>
+        <div class="photo-frame">
+          <figure class="photo-slide is-active">
+            <img src="images/jakarta/jkt-01.jpg" alt="" onerror="this.remove()">
+            <figcaption class="annotation">Add a caption for jkt-01.jpg</figcaption>
+          </figure>
+          <figure class="photo-slide">
+            <img src="images/jakarta/jkt-02.jpg" alt="" onerror="this.remove()">
+            <figcaption class="annotation">Add a caption for jkt-02.jpg</figcaption>
+          </figure>
+          <figure class="photo-slide">
+            <img src="images/jakarta/jkt-03.jpg" alt="" onerror="this.remove()">
+            <figcaption class="annotation">Add a caption for jkt-03.jpg</figcaption>
+          </figure>
+          <figure class="photo-slide">
+            <img src="images/jakarta/jkt-04.jpg" alt="" onerror="this.remove()">
+            <figcaption class="annotation">Add a caption for jkt-04.jpg</figcaption>
+          </figure>
+        </div>
+        <button class="nav-arrow next" data-next aria-label="Next photo">&rsaquo;</button>
       </div>
+      <div class="dots"></div>
     </div>
   </section>
 
   <!-- HO CHI MINH CITY -->
-  <section id="hcmc" class="chapter" data-accent="hcmc">
-    <div class="chapter-inner">
-      <p class="chapter-stamp" data-accent="hcmc">HCMC · Final Stretch</p>
+  <section id="hcmc" class="view view--album" data-accent="hcmc">
+    <div class="album-wrap">
+      <div class="album-header">
+        <button class="back-btn" data-back>&larr; Passport</button>
+        <p class="album-title-chip">HCMC &middot; Final Stretch</p>
+      </div>
       <h2>Ho Chi Minh City</h2>
-      <p class="chapter-copy">The last stamp in the book — the one where everyone
+      <p class="album-copy">The last stamp in the book — the one where everyone
       quietly realised the fellowship was nearly over, and made the most of every hour.</p>
 
-      <div class="photo-grid">
-        <figure class="polaroid r4"><img src="images/hcmc/hcmc-01.jpg" alt="" onerror="this.remove()"><figcaption>images/hcmc/hcmc-01.jpg</figcaption></figure>
-        <figure class="polaroid r3"><img src="images/hcmc/hcmc-02.jpg" alt="" onerror="this.remove()"><figcaption>images/hcmc/hcmc-02.jpg</figcaption></figure>
-        <figure class="polaroid r2"><img src="images/hcmc/hcmc-03.jpg" alt="" onerror="this.remove()"><figcaption>images/hcmc/hcmc-03.jpg</figcaption></figure>
-        <figure class="polaroid r1"><img src="images/hcmc/hcmc-04.jpg" alt="" onerror="this.remove()"><figcaption>images/hcmc/hcmc-04.jpg</figcaption></figure>
+      <div class="album-stage">
+        <button class="nav-arrow prev" data-prev aria-label="Previous photo">&lsaquo;</button>
+        <div class="photo-frame">
+          <figure class="photo-slide is-active">
+            <img src="images/hcmc/hcmc-01.jpg" alt="" onerror="this.remove()">
+            <figcaption class="annotation">Add a caption for hcmc-01.jpg</figcaption>
+          </figure>
+          <figure class="photo-slide">
+            <img src="images/hcmc/hcmc-02.jpg" alt="" onerror="this.remove()">
+            <figcaption class="annotation">Add a caption for hcmc-02.jpg</figcaption>
+          </figure>
+          <figure class="photo-slide">
+            <img src="images/hcmc/hcmc-03.jpg" alt="" onerror="this.remove()">
+            <figcaption class="annotation">Add a caption for hcmc-03.jpg</figcaption>
+          </figure>
+          <figure class="photo-slide">
+            <img src="images/hcmc/hcmc-04.jpg" alt="" onerror="this.remove()">
+            <figcaption class="annotation">Add a caption for hcmc-04.jpg</figcaption>
+          </figure>
+        </div>
+        <button class="nav-arrow next" data-next aria-label="Next photo">&rsaquo;</button>
       </div>
+      <div class="dots"></div>
     </div>
   </section>
 
   <!-- THANK YOU -->
-  <section id="thanks" class="chapter chapter--thanks" data-accent="thanks">
-    <div class="chapter-inner">
-      <p class="chapter-stamp" data-accent="thanks">Last Page</p>
+  <section id="thanks" class="view view--album view--thanks" data-accent="thanks">
+    <div class="album-wrap">
+      <div class="album-header">
+        <button class="back-btn" data-back>&larr; Passport</button>
+        <p class="album-title-chip">Last Page</p>
+      </div>
       <h2>Thank you</h2>
-      <p class="chapter-copy">To everyone on the Westpac team who made this year happen —
+      <p class="album-copy">To everyone on the Westpac team who made this year happen —
       thank you. Genuinely. From all of us.</p>
 
       <div class="notes-grid">
@@ -147,6 +225,8 @@
   </section>
 
 </main>
+
+<div class="plane" aria-hidden="true">&#9992;</div>
 
 <script src="script.js"></script>
 </body>
