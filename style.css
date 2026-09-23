@@ -3,17 +3,28 @@
   --paper:#FAF6EF;
   --ink:#221812;
   --ink-soft:#5b5147;
-  --westpac:#D2001F;
+  
+  /* Design Board Colors */
+  --westpac-red: #DC1714;
+  --westpac-pink: #FCB3DC;
+  --westpac-deep-red: #9C0404;
+  --vinca: #5478A4;
+  --clear-lake: #A6BCD7;
+  --magic-night: #393760;
+  
+  --westpac:#DC1714; /* Updated to the brighter red */
   --westpac-soft:#F6D9DC;
 
-  --sg:#1F6F5C;      --sg-soft:#DCEAE4;
+  /* Location Colors (Kept, but refined) */
+  --sg:#5478A4;      --sg-soft:#DCEAE4; /* Vinca */
   --jb:#D9722E;      --jb-soft:#F5DFC9;
-  --jakarta:#B23A48; --jakarta-soft:#F2DBDC;
+  --jakarta:#9C0404; --jakarta-soft:#F2DBDC; /* Deep Red */
   --hcmc:#A6852F;    --hcmc-soft:#EFE4C4;
-  --thanks:#D2001F;  --thanks-soft:#F6D9DC;
+  --thanks:#DC1714;  --thanks-soft:#F6D9DC;
 
-  --serif:'Fraunces', Georgia, serif;
-  --sans:'Work Sans', system-ui, sans-serif;
+  /* Fonts */
+  --display: 'Montserrat', system-ui, sans-serif;
+  --sans: 'Work Sans', system-ui, sans-serif;
 }
 
 *{box-sizing:border-box;}
@@ -31,7 +42,13 @@ body{
   overflow-x:hidden;
 }
 a{color:inherit;}
-h1,h2{font-family:var(--serif); font-weight:500; margin:0 0 .3em;}
+h1,h2{
+  font-family:var(--display); 
+  font-weight:800; 
+  text-transform:uppercase;
+  letter-spacing:-0.02em;
+  margin:0 0 .3em;
+}
 button{font:inherit; background:none; border:0; cursor:pointer; color:inherit;}
 
 .topbar{
