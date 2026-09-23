@@ -198,9 +198,17 @@ button{font:inherit; background:none; border:0; cursor:pointer; color:inherit;}
   margin:2rem 0 2.4rem;
 }
 .note{
-  margin:0; padding:1.3rem 1.2rem; background:#fff;
-  border-radius:10px; font-family:var(--serif); font-size:1rem; color:var(--ink);
-  box-shadow:0 8px 18px rgba(34,24,18,.08);
+  margin:0; 
+  padding:2rem 1.5rem; 
+  background:var(--westpac-deep-red); /* Deep Red background */
+  border-radius:4px; /* Slightly sharper corners */
+  font-family:var(--display); 
+  font-weight:700;
+  font-size:1.1rem; 
+  text-transform:uppercase;
+  color:var(--westpac-pink); /* Pink text */
+  box-shadow:0 8px 18px rgba(34,24,18,.2);
+  text-align:center;
 }
 .n1{transform:rotate(-1.5deg);} .n2{transform:rotate(1deg);} .n3{transform:rotate(-.5deg);}
 .n4{transform:rotate(1.6deg);} .n5{transform:rotate(-1deg);} .n6{transform:rotate(.6deg);}
